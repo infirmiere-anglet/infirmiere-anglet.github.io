@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Infirmière à domicile à Anglet | Koterapia</title>
+
+<meta name="description"
+content="Infirmière à domicile à Anglet. Soins infirmiers, accompagnement et prise en charge personnalisée à domicile.">
+
+<style>
+
+:root {
+    --turquoise: #5bb6c5;
+    --turquoise-dark: #328c9d;
+    --green: #9acb70;
+    --orange: #df861c;
+    --beige: #d9c39b;
+    --cream: #fbfaf6;
+    --dark: #28464c;
+    --grey: #68787b;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.92);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 5px 25px rgba(0,0,0,.06);
+}
+
+.navbar {
+    width: min(1200px, 92%);
+    height: 85px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 175px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+nav a:hover {
+    color: var(--turquoise-dark);
+}
+
+.call-button {
+    background: var(--orange);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+}
+
+.menu {
+    display: none;
+    font-size: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(40,70,76,.80),
+            rgba(40,70,76,.35)
+        ),
+        url("https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=2000&q=85")
+        center / cover fixed;
+
+    color: white;
+}
+
+.hero-content {
+    width: min(1200px, 92%);
+    margin: auto;
+    padding-top: 80px;
+}
+
+.badge {
+    display: inline-block;
+
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.4);
+
+    padding: 8px 16px;
+    border-radius: 50px;
+
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 85px);
+    line-height: .98;
+    max-width: 850px;
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 20px;
+    margin: 30px 0;
+    color: rgba(255,255,255,.9);
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 16px 25px;
+    border-radius: 50px;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: var(--orange);
+    color: white;
+}
+
+.secondary {
+    border: 1px solid rgba(255,255,255,.6);
+    color: white;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 110px 0;
+}
+
+.container {
+    width: min(1150px, 92%);
+    margin: auto;
+}
+
+.label {
+    color: var(--turquoise-dark);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: clamp(35px, 5vw, 60px);
+    line-height: 1.05;
+    letter-spacing: -2px;
+    color: var(--dark);
+}
+
+.intro {
+    background: white;
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.intro-image {
+    min-height: 550px;
+
+    border-radius: 35px;
+
+    background:
+        url("https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85")
+        center / cover;
+
+    box-shadow: 0 25px 70px rgba(40,70,76,.15);
+}
+
+.text p {
+    color: var(--grey);
+    margin: 25px 0;
+    font-size: 17px;
+}
+
+.checks {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.checks li {
+    margin: 14px 0;
+    font-weight: bold;
+}
+
+.checks li::before {
+    content: "✓";
+
+    display: inline-grid;
+    place-items: center;
+
+    width: 26px;
+    height: 26px;
+
+    margin-right: 12px;
+
+    border-radius: 50%;
+
+    background: var(--green);
+    color: white;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    background: var(--cream);
+}
+
+.section-title {
+    max-width: 700px;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    margin-top: 20px;
+    color: var(--grey);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    transition: .3s;
+
+    box-shadow: 0 8px 35px rgba(40,70,76,.05);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(40,70,76,.12);
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 18px;
+
+    background: rgba(91,182,197,.15);
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+.card:nth-child(2) .icon {
+    background: rgba(154,203,112,.2);
+}
+
+.card:nth-child(3) .icon {
+    background: rgba(223,134,28,.15);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+.card p {
+    color: var(--grey);
+}
+
+/* =========================
+   PARALLAX
+========================= */
+
+.parallax {
+    min-height: 520px;
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(40,70,76,.72),
+            rgba(40,70,76,.72)
+        ),
+        url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=2000&q=85")
+        center / cover fixed;
+
+    color: white;
+}
+
+.parallax h2 {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+}
+
+.parallax p {
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+/* =========================
+   ZONE
+========================= */
+
+.zone {
+    background: white;
+}
+
+.zone-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.map {
+    border-radius: 30px;
+    overflow: hidden;
+    height: 450px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.tag {
+    padding: 10px 17px;
+    background: var(--cream);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    background: var(--turquoise);
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.contact p {
+    margin: 25px 0;
+    color: rgba(255,255,255,.9);
+}
+
+.contact-card {
+    background: rgba(255,255,255,.13);
+    padding: 35px;
+    border-radius: 25px;
+}
+
+.contact-line {
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+.contact-line:last-child {
+    border: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 35px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 850px) {
+
+    header {
+        position: fixed;
+    }
+
+    .navbar {
+        height: 72px;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+
+        position: absolute;
+
+        top: 72px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 10px 0;
+    }
+
+    .call-button {
+        text-align: center;
+    }
+
+    .hero {
+        min-height: 90vh;
+
+        background-attachment: scroll;
+    }
+
+    .hero-content {
+        padding-top: 100px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .button {
+        width: 100%;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+
+    .intro-grid,
+    .zone-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-image {
+        min-height: 400px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .parallax {
+        background-attachment: scroll;
+        min-height: 450px;
+    }
+
+    .map {
+        height: 350px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+/* très petits téléphones */
+
+@media(max-width: 420px) {
+
+    .hero h1 {
+        font-size: 41px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .card {
+        padding: 27px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="navbar">
+
+<a href="#accueil" class="logo">
+    <img src="logo.png" alt="Koterapia - Infirmière à Anglet">
+</a>
+
+<button class="menu" id="menu">
+    ☰
+</button>
+
+<nav id="nav">
+
+<a href="#accueil">Accueil</a>
+<a href="#soins">Soins</a>
+<a href="#apropos">À propos</a>
+<a href="#zone">Zone d'intervention</a>
+
+<a href="#contact" class="call-button">
+    📞 Appeler
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="accueil">
+
+<div class="hero-content">
+
+<div class="badge">
+    Infirmière à domicile · Anglet
+</div>
+
+<h1>
+    Des soins<br>
+    <span>avec humanité.</span>
+</h1>
+
+<p>
+    Une prise en charge infirmière professionnelle,
+    attentive et personnalisée directement à votre domicile
+    à Anglet et ses alentours.
+</p>
+
+<div class="buttons">
+
+<a href="tel:+33500000000" class="button primary">
+    📞 Appeler maintenant
+</a>
+
+<a href="#soins" class="button secondary">
+    Découvrir les soins
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     A PROPOS
+========================= -->
+
+<section class="intro" id="apropos">
+
+<div class="container intro-grid">
+
+<div class="intro-image"></div>
+
+<div class="text">
+
+<div class="label">
+    Votre infirmière
+</div>
+
+<h2>
+    Prendre soin de vous,
+    simplement.
+</h2>
+
+<p>
+    Chaque personne mérite une prise en charge
+    attentive, professionnelle et adaptée à ses besoins.
+</p>
+
+<p>
+    Les soins sont réalisés à domicile à Anglet,
+    dans le respect de votre prescription médicale
+    et de votre confort.
+</p>
+
+<ul class="checks">
+
+<li>Écoute et bienveillance</li>
+<li>Soins professionnels</li>
+<li>Accompagnement personnalisé</li>
+<li>Intervention à domicile</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     SOINS
+========================= -->
+
+<section class="services" id="soins">
+
+<div class="container">
+
+<div class="section-title">
+
+<div class="label">
+    Les soins
+</div>
+
+<h2>
+    Une prise en charge
+    adaptée à vos besoins.
+</h2>
+
+<p>
+    Les soins sont réalisés selon prescription médicale
+    et dans le respect des règles professionnelles.
+</p>
+
+</div>
+
+
+<div class="services-grid">
+
+<div class="card">
+
+<div class="icon">💉</div>
+
+<h3>
+    Injections
+</h3>
+
+<p>
+    Réalisation des injections prescrites
+    dans le respect des protocoles de soins.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🩹</div>
+
+<h3>
+    Pansements
+</h3>
+
+<p>
+    Soins de plaies et renouvellement
+    des pansements selon prescription.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🩺</div>
+
+<h3>
+    Surveillance
+</h3>
+
+<p>
+    Surveillance et accompagnement
+    de votre état de santé.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💧</div>
+
+<h3>
+    Perfusions
+</h3>
+
+<p>
+    Prise en charge des soins liés
+    aux perfusions prescrites.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">❤️</div>
+
+<h3>
+    Accompagnement
+</h3>
+
+<p>
+    Une présence professionnelle
+    et attentive à vos côtés.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏠</div>
+
+<h3>
+    Soins à domicile
+</h3>
+
+<p>
+    Des soins directement chez vous,
+    dans votre environnement habituel.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PARALLAX
+========================= -->
+
+<section class="parallax">
+
+<div class="container">
+
+<div class="label" style="color:#9acb70;">
+    Koterapia · Anglet
+</div>
+
+<h2>
+    Votre confort au cœur
+    de chaque soin.
+</h2>
+
+<p>
+    Une relation de confiance, de l'écoute
+    et une prise en charge humaine.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ZONE
+========================= -->
+
+<section class="zone" id="zone">
+
+<div class="container zone-grid">
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=Anglet%2C%20France&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+
+<div>
+
+<div class="label">
+    Zone d'intervention
+</div>
+
+<h2>
+    Anglet et
+    alentours.
+</h2>
+
+<p style="color:#68787b;margin-top:20px;">
+    Le cabinet intervient à domicile à Anglet
+    et dans les secteurs desservis.
+</p>
+
+<div class="tags">
+
+<span class="tag">Anglet</span>
+<span class="tag">Bayonne</span>
+<span class="tag">Biarritz</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+<div>
+
+<div class="label" style="color:#d9c39b;">
+    Contact
+</div>
+
+<h2>
+    Besoin de soins
+    à domicile ?
+</h2>
+
+<p>
+    Contactez directement le cabinet afin
+    d'échanger sur votre prise en charge.
+</p>
+
+<a href="tel:+33500000000" class="button primary">
+    📞 Appeler le cabinet
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-line">
+    <strong>Téléphone</strong><br>
+    <a href="tel:+33500000000">
+        +33 5 00 00 00 00
+    </a>
+</div>
+
+<div class="contact-line">
+    <strong>Email</strong><br>
+    <a href="mailto:contact@exemple.fr">
+        contact@exemple.fr
+    </a>
+</div>
+
+<div class="contact-line">
+    <strong>Secteur</strong><br>
+    Anglet et alentours
+</div>
+
+<div class="contact-line">
+    <strong>Horaires</strong><br>
+    Sur rendez-vous
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer">
+
+<div>
+    © 2026 Koterapia
+</div>
+
+<div>
+    Infirmière à domicile · Anglet
+</div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const menu = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+menu.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+    });
+
+});
+
+</script>
+
+</body>
+</html>
